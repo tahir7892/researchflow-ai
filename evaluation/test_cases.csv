@@ -1,0 +1,11 @@
+id,category,input_or_condition,expected_behavior,measurement_method,status
+TC01,Typical,"Topic: AI in higher education; 2024 onward",Both sources queried and unique sourced records listed,Live UI run,NOT RUN
+TC02,Typical,"Topic: renewable energy storage; 2022 onward",Valid brief cites only retrieved source IDs,Inspect Markdown and sources,NOT RUN
+TC03,Input variation,"Topic with whitespace and punctuation",Input normalized and safely processed,Live UI run,NOT RUN
+TC04,Edge,"Topic shorter than 4 characters",User sees validation error,Live UI run,NOT RUN
+TC05,Edge,"Research topic with no matching works",No fabricated report or sources,Live UI run,NOT RUN
+TC06,Failure,"Simulated OpenAlex outage",Crossref-only result retained with warning,Automated test 08,UNIT TESTED
+TC07,Failure,"Simulated outage of both sources",Graceful clear error and no fake brief,Automated test 09,UNIT TESTED
+TC08,Failure,"Simulated Gemini malformed response",Fallback clearly labeled non-AI and logged warning,Automated test 14,UNIT TESTED
+TC09,Security/accuracy,"AI references source ID S999",Invalid source ID rejected,Automated test 11,UNIT TESTED
+TC10,Adoption,"Non-developer edits approves and downloads the brief",Approval saved with audit entry and correct exports,Proxy user observation,NOT RUN

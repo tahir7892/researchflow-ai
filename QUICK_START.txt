@@ -1,0 +1,20 @@
+ResearchFlow AI — quick start for an Intel Mac
+
+1. Check Python 3: open Terminal; run `python3 --version`.
+   If lower than 3.11, install Python 3.11 from https://python.org/downloads/.
+2. Open Terminal in this extracted folder, then run: ./start.sh
+   If `python3` points to an old version and `python3.11` exists, run: PYTHON=python3.11 ./start.sh
+3. Open the browser URL shown (normally http://localhost:8501).
+4. Enter topic `AI in higher education` and set since-year 2023.
+   You can test public source retrieval without any key.
+5. To test real AI: get a Gemini free-tier key at https://aistudio.google.com/apikey
+   Paste it into the password field in the left sidebar, then run the topic again.
+   Look for the status `AI-assisted / human review required`.
+6. Check source rows, edit the draft, click Approve and download both files.
+7. In a new Terminal tab, run `python3 scripts/run_checks.py` to generate actual mocked-test results.
+8. Fill `evaluation/baseline_and_results_template.csv` with REAL manual and automated timings.
+9. Read `docs/SUBMISSION_CHECKLIST.md` to finish the five required deliverables.
+
+IMPORTANT: The project includes tested core Python code, but neither live external APIs,
+nor Mac Streamlit installation, nor true Gemini calls were tested in the packaging environment.
+Offline outline != AI generation. No measured business improvement is claimed yet.

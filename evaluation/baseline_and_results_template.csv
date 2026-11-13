@@ -1,0 +1,11 @@
+test_id,manual_seconds,automated_seconds,manual_quality_pass,automated_quality_pass,manual_interventions,automated_interventions,source_verification_pass,notes
+TC01,,,,,,,,
+TC02,,,,,,,,
+TC03,,,,,,,,
+TC04,,,,,,,,
+TC05,,,,,,,,
+TC06,,,,,,,,
+TC07,,,,,,,,
+TC08,,,,,,,,
+TC09,,,,,,,,
+TC10,,,,,,,,

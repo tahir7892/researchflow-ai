@@ -1,0 +1,11 @@
+{
+  "evaluation_type": "synthetic_unit_tests_only",
+  "note": "Not a live API integration test, not a manual baseline, and not real-user validation.",
+  "timestamp_utc": "2026-11-13T14:13:19.056308+00:00",
+  "tests_run": 21,
+  "failures": 0,
+  "errors": 0,
+  "passed": 21,
+  "elapsed_seconds": 0.013,
+  "all_pass": true
+}
